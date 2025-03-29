@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(224, 234, 236);
+    color: rgb(255, 255, 255); /* Si vous souhaitez changer la couleur du texte pour qu'il soit lisible sur le fond noir */
+    background-image: url('ElecBackground.jpg'); /* Spécifie l'image à utiliser comme arrière-plan */
+    background-size: 2016px; /* Redimensionne l'image pour couvrir toute la zone d'arrière-plan */
+    background-position: top; /* Centre l'image à l'intérieur de la zone d'arrière-plan */
+}
+
+h1 {
+    position: relative; /* Permet de positionner l'élément */
+    text-align: center;
+    top: 20px; /* Déplace l'élément de 50 pixels vers le bas */
+}
+
+h3 {
+    position: relative;
+    text-align: center;
+    top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+p{
+    position: relative; /* Permet de positionner l'élément */
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.tabs {
+    text-align: center; /* Centrer les boutons d'onglet */
+}
+
+.tablink {
+    background-color: #ffffff; /* Couleur de fond des boutons */
+    text-decoration-color: rgb(224, 234, 236);
+    color: rgb(255, 255, 255)
+    border: none; /* Supprimer les bordures */
+    padding: 10px 20px; /* Ajouter de l'espace autour du texte */
+    cursor: pointer; /* Changer le curseur en pointeur au survol */
+    margin: 10px; /* Ajouter de l'espace entre les boutons */
+}
+
+.tabcontent {
+    display: none; /* Masquer tous les contenus d'onglet par défaut */
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+#esp32 {
+    position: relative; 
+    display: none;
+    padding: 20px;
+}
+
+#esp32 h3 {
+    margin-bottom: 40px;
+}
+
+#esp32 button {
+    margin-right: 20px;
+}
+
+#esp32 label {
+    margin-bottom: 40px;
+}
+
+#ESP32 p1{
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 120px;
+}
