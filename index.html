@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset = "UTF-8">
-  <meta name = "viewport" content = "width=device-width , initial-scale=1.0">
-  <title>Redirection...</title>
-  <meta http-equiv="refresh" content = "0;url=Radio.html">
+    <link rel="stylesheet" href="Radio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Radio-amateur : fabrication d'une radio</title>
+    <script src="Radio.js"></script>
 </head>
-  <body>
-    <p>Si vous n'êtes pas redirigé automatiquement, <a href = "Radio.html">cliquez ici</a>. </p>
-  </body>
+<body>
+    <h1>
+        Site de test pour le projet radio et de requetes HTTP vers un ESP32</h1>
+    <p>Page d'acceuil, choisissez l'onglet correspondant à vos attentes</p>
+    <img src="free-nature-images.jpg" alt="Lien : ">
+    <a href="page1.html">Lien vers une autre page</a>
+    <div class="tabs">
+        <button class="tablink" onclick="openTab('ProjetRadio')">Radio et tutos</button>
+        <button class="tablink" onclick="openTab('Electronique')">Les détails du Projet</button>
+        <button class="tablink" onclick="openTab('esp32')">Page d'allumage de LED</button>
+        <button class = "tablink" onclick="openTab('tutos')">Page des tutos </button>
+    </div>
+    
+    <div id="ProjetRadio" class="tabcontent">
+        <h3>Contenu de l'onglet 1</h3>
+        <img src="BackScreen.bmp"
+        <p>Ceci est le contenu de l'onglet 1.</p>
+    </div>
+    
+    <div id="Electronique" class="tabcontent">
+        <h3>Contenu de l'onglet 2</h3>
+        <p>Ceci est le contenu de l'onglet 2.</p>
+
+    </div>
+
+    <div id="tutos" class = "tabcontent">
+        <h3>Les tutos radio</h3>
+        <p>Contenu des tutos</p>
+    </div>
+
+    <div id="esp32" class="tabcontent">
+        <h3>ESP32</h3>
+        <button id="allumerLed" onclick="allumerLED()">Allumer la LED</button>
+        <button id="eteindreLed" onclick="eteindreLED()">Éteindre la LED</button>
+        <button onclick="validerAdresseIP()">Valider</button>
+        <label for="adresseIp">Adresse IP de l'ESP32 :</label>
+        <input type="text" id="adresseIp" name="adresseIp de l'ESP32" onchange="validerAdresseIP()">
+        <p1>Adresse IP enregistrée : <span id="adresseIpEnregistree"></span></p>
+    </div>
+</body>
+</html>
